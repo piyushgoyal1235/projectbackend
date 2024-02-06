@@ -1,0 +1,49 @@
+.new-Collections {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: auto; /* Adjusted height for responsiveness */
+    margin-bottom: 50px; /* Adjusted margin for a cleaner appearance */
+    font-family: 'Edu SA Beginner', cursive;
+}
+
+.new-Collections h1 {
+    color: #171717;
+    font-size: 4rem; /* Updated font size for a more responsive look */
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.new-Collections hr {
+    width: 100px; /* Reduced width for a more subtle appearance */
+    height: 4px; /* Reduced height for a sleeker look */
+    border-radius: 5px;
+    background: #252525;
+    margin-bottom: 20px; /* Adjusted margin for responsiveness */
+}
+
+.collections {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px; /* Adjusted gap for responsiveness */
+    margin-top: 30px;
+}
+
+/* Ensure images don't exceed a certain width */
+.collections img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .collections {
+        grid-template-columns: 1fr;
+    }
+
+    .new-Collections h1 {
+        font-size: 2rem; /* Adjusted font size for smaller screens */
+        margin-bottom: 10px; /* Adjusted margin for smaller screens */
+    }
+}

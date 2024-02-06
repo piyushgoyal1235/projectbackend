@@ -1,0 +1,67 @@
+/* Common styles */
+.hero {
+    height: 100vh;
+    font-family: 'Exo 2', sans-serif;
+}
+
+
+.hero-right {
+    background-image: url('../assets/hero_image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.hero-right h1 {
+    color: white;
+    font-size:6vw;
+    font-weight: 300;
+    line-height: 1.1;
+    margin-top: 3vw;
+    margin-left: 30px;
+}
+
+/* Latest button */
+.hero-latest-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vw;
+    width: 40vw;
+    height: 8vw;
+    border-radius: 2vw;
+    margin-top: 3vw;
+    background: #0c0d0c;
+    color: rgb(247, 244, 244);
+    font-size: 2vw;
+    font-weight: 500;
+    margin-left: 5vw;
+    margin-bottom: 2vw;
+}
+
+/* Media queries */
+@media screen and (min-width: 768px) {
+    /* Adjustments for tablets and larger screens */
+    .hero-latest-btn {
+        width: 250px;
+        height: 50px;
+        border-radius: 25px;
+        font-size: 18px;
+        margin-left: 30px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    /* Adjustments for desktop and larger screens */
+    .hero-right h1 {
+        font-size: 3vw;
+        margin-top: 2vw;
+    }
+}
